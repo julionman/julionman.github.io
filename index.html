@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>久久婷婷久久99国产_久久国产视频社区_婷婷国产视频创作与看片指南</title>
+<meta name="description" content="久久婷婷久久99国产是一个聚焦国产视频创作与观看的内容社区，汇集久久国产短片、婷婷剧场连载、创作者访谈、评分榜单与看片路径指南，适合想找国产原创视频与了解创作生态的观众。">
+<meta name="keywords" content="久久国产短片,婷婷剧场连载,国产原创视频,视频创作者社区,看片路径指南">
+<style>
+:root{
+  --ink:#141821;
+  --ink-2:#2c3444;
+  --muted:#6b7486;
+  --line:#e6e9f0;
+  --line-2:#d3d8e4;
+  --bg:#f6f7fb;
+  --panel:#ffffff;
+  --brand:#c2185b;
+  --brand-2:#7b1fa2;
+  --brand-soft:#fde8f1;
+  --accent:#0f8a8a;
+  --accent-soft:#e3f5f5;
+  --gold:#b8860b;
+  --gold-soft:#fbf3dc;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 2px 10px rgba(20,24,33,.06);
+  --shadow-lg:0 10px 30px rgba(20,24,33,.10);
+  --maxw:1340px;
+  --ann-h:38px;
+  --head-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:20px}
+li{margin-bottom:6px}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:4px}
+
+/* ============ 吸顶公告条 ============ */
+.annbar{
+  position:sticky;top:0;z-index:60;
+  height:var(--ann-h);display:flex;align-items:center;
+  background:linear-gradient(90deg,#7b1fa2,#c2185b 60%,#e0447a);
+  color:#fff;font-size:13px;
+}
+.annbar .wrap{display:flex;align-items:center;gap:14px;width:100%}
+.annbar .tag{
+  flex:none;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.45);
+  padding:1px 9px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:.5px;
+}
+.annbar .msg{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.annbar .msg b{font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:default}
+.annbar .side{flex:none;font-size:12px;opacity:.9}
+
+/* ============ 页头 ============ */
+.header{
+  position:sticky;top:var(--ann-h);z-index:55;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  height:var(--head-h);
+}
+.header .wrap{display:flex;align-items:center;gap:22px;height:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{width:36px;height:36px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text .bt-main{font-size:16px;font-weight:800;letter-spacing:.2px}
+.brand-text .bt-sub{font-size:11px;color:var(--muted);letter-spacing:2px}
+.mainnav{display:flex;align-items:center;gap:4px;flex:1;min-width:0;overflow:hidden}
+.mainnav a{
+  flex:none;padding:7px 11px;border-radius:8px;font-size:14px;color:var(--ink-2);
+  transition:background .15s,color .15s;white-space:nowrap;
+}
+.mainnav a:hover{background:var(--brand-soft);color:var(--brand)}
+.head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-box{display:flex;align-items:center;background:var(--bg);border:1px solid var(--line-2);border-radius:20px;padding:0 6px 0 12px;height:36px}
+.search-box input{border:0;background:transparent;outline:none;font-size:13px;width:140px;color:var(--ink)}
+.search-box input::placeholder{color:#9aa3b3}
+.search-box button{border:0;background:var(--brand);color:#fff;border-radius:16px;font-size:12px;padding:4px 12px}
+.btn-ghost{border:1px solid var(--line-2);background:#fff;border-radius:20px;padding:7px 15px;font-size:13px;color:var(--ink-2)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.mobile-toggle{display:none;border:1px solid var(--line-2);background:#fff;border-radius:8px;padding:6px 10px;font-size:13px}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  background:radial-gradient(1200px 500px at 82% -10%,#fbe4ef 0%,transparent 60%),
+             radial-gradient(900px 460px at 8% 110%,#e9e3f7 0%,transparent 62%),
+             linear-gradient(180deg,#ffffff,#f3f4fa);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:44px;align-items:center;padding-top:52px;padding-bottom:52px;
+}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line-2);border-radius:20px;padding:4px 12px;font-size:12px;color:var(--brand);font-weight:600;box-shadow:var(--shadow)}
+.hero-eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px var(--brand-soft)}
+.hero h1{
+  font-size:clamp(30px,4.2vw,46px);letter-spacing:-.5px;margin:16px 0 14px;
+  background:linear-gradient(100deg,#141821 20%,#7b1fa2 65%,#c2185b);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-lead{font-size:15.5px;color:var(--ink-2);max-width:540px;margin-bottom:22px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.btn-primary{
+  background:linear-gradient(120deg,var(--brand-2),var(--brand));color:#fff;border:0;
+  padding:11px 22px;border-radius:24px;font-size:14px;font-weight:600;box-shadow:0 6px 18px rgba(194,24,91,.28);
+}
+.btn-primary:hover{filter:brightness(1.06)}
+.btn-secondary{
+  background:#fff;border:1px solid var(--line-2);color:var(--ink-2);
+  padding:11px 22px;border-radius:24px;font-size:14px;font-weight:600;
+}
+.btn-secondary:hover{border-color:var(--brand);color:var(--brand)}
+.hero-stats{display:flex;gap:30px;flex-wrap:wrap}
+.hero-stats .stat .num{font-size:22px;font-weight:800;color:var(--brand-2);line-height:1.2}
+.hero-stats .stat .lbl{font-size:12px;color:var(--muted)}
+.hero-visual{position:relative}
+.hero-frame{
+  position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);
+  background:#1b1024;aspect-ratio:4/3.1;
+}
+.hero-frame svg{width:100%;height:100%;display:block}
+.hero-float{
+  position:absolute;background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:9px 13px;box-shadow:var(--shadow-lg);font-size:12px;
+}
+.hero-float.f1{left:-14px;top:26px}
+.hero-float.f2{right:-10px;bottom:30px}
+.hero-float .k{font-size:11px;color:var(--muted)}
+.hero-float .v{font-weight:700;color:var(--ink);font-size:13px}
+.hero-float .v em{color:var(--brand);font-style:normal}
+
+/* ============ 主体三栏 ============ */
+.layout{
+  display:grid;
+  grid-template-columns:176px minmax(0,1fr) 248px;
+  gap:26px;max-width:var(--maxw);margin:0 auto;padding:30px 22px 60px;
+}
+.channel-nav{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 18px);align-self:start}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.panel-pad{padding:16px}
+.panel-title{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--ink-2);text-transform:uppercase;display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.panel-title::before{content:"";width:4px;height:14px;border-radius:2px;background:linear-gradient(var(--brand-2),var(--brand))}
+.ch-list{list-style:none;margin:0;padding:0}
+.ch-list li{margin:0}
+.ch-list a{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;font-size:13.5px;color:var(--ink-2)}
+.ch-list a:hover{background:var(--brand-soft);color:var(--brand)}
+.ch-list a .cnt{font-size:11px;color:var(--muted)}
+.ch-list a:hover .cnt{color:var(--brand)}
+
+.main-col{min-width:0;display:flex;flex-direction:column;gap:30px}
+.side-col{min-width:0;display:flex;flex-direction:column;gap:22px;position:sticky;top:calc(var(--ann-h) + var(--head-h) + 18px);align-self:start}
+
+/* 板块通用 */
+.section{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 16px)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:16px}
+.sec-head h2{font-size:21px;letter-spacing:-.2px}
+.sec-head .sub{font-size:12.5px;color:var(--muted);margin-top:4px}
+.sec-head .more{font-size:12.5px;color:var(--brand);font-weight:600;white-space:nowrap}
+.sec-head .more:hover{text-decoration:underline}
+
+/* 主题领域概览 */
+.overview{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.overview p{color:var(--ink-2);font-size:14.5px}
+.overview .ov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.ov-item{background:var(--bg);border-radius:var(--radius-sm);padding:12px 13px;border:1px solid var(--line)}
+.ov-item .oi-t{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.ov-item .oi-d{font-size:12px;color:var(--muted);line-height:1.55}
+
+/* 精选内容卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .16s,box-shadow .16s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.card-cover{position:relative;aspect-ratio:4/3;overflow:hidden;background:#eceff5}
+.card-cover img{width:100%;height:100%;object-fit:cover}
+.card-badge{position:absolute;left:10px;top:10px;background:rgba(20,24,33,.78);color:#fff;font-size:11px;padding:3px 9px;border-radius:20px;font-weight:600;backdrop-filter:blur(4px)}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:15.5px;line-height:1.4}
+.card-body .desc{font-size:12.5px;color:var(--muted);line-height:1.62;flex:1}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11px;color:var(--brand-2);background:var(--brand-soft);padding:2px 8px;border-radius:20px;white-space:nowrap}
+.tag.alt{color:var(--accent);background:var(--accent-soft)}
+.card-meta{display:flex;align-items:center;justify-content:space-between;font-size:11.5px;color:var(--muted);padding-top:6px;border-top:1px dashed var(--line)}
+.card-meta .score{color:var(--gold);font-weight:700}
+
+/* 最新更新列表 */
+.update-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.update-item{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:14px;align-items:center;padding:13px 18px;border-bottom:1px solid var(--line)}
+.update-item:last-child{border-bottom:0}
+.update-item:hover{background:#fafbfe}
+.up-thumb{width:64px;height:64px;border-radius:9px;overflow:hidden;background:#eceff5}
+.up-thumb img{width:100%;height:100%;object-fit:cover}
+.up-main .up-t{font-size:14px;font-weight:700;margin-bottom:2px}
+.up-main .up-d{font-size:12.5px;color:var(--muted);line-height:1.55}
+.up-time{font-size:11.5px;color:var(--muted);white-space:nowrap;text-align:right}
+.up-time .ep{display:inline-block;margin-bottom:3px;font-size:11px;color:var(--brand);background:var(--brand-soft);padding:1px 7px;border-radius:20px;font-weight:600}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 13px;transition:border-color .15s,transform .15s;display:block}
+.cat:hover{border-color:var(--brand);transform:translateY(-2px)}
+.cat .cat-ico{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:14px;margin-bottom:9px}
+.cat .cat-t{font-size:14px;font-weight:700;margin-bottom:2px}
+.cat .cat-d{font-size:11.5px;color:var(--muted);line-height:1.5}
+
+/* 深度解析 */
+.deep{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow)}
+.deep h3{font-size:17px;margin:22px 0 10px;padding-left:12px;border-left:4px solid var(--brand);line-height:1.4}
+.deep h3:first-of-type{margin-top:8px}
+.deep p{font-size:14px;color:var(--ink-2);line-height:1.78}
+.deep ul li{font-size:14px;color:var(--ink-2);line-height:1.72}
+.deep .cmp{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:13px}
+.deep .cmp th,.deep .cmp td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+.deep .cmp th{background:var(--bg);font-weight:700;color:var(--ink-2);font-size:12.5px}
+.deep .cmp td{color:var(--ink-2)}
+
+/* 体验指南步骤 */
+.guide-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:17px 18px;box-shadow:var(--shadow);position:relative}
+.step .num{font-size:12px;font-weight:800;color:#fff;background:linear-gradient(120deg,var(--brand-2),var(--brand));width:26px;height:26px;border-radius:8px;display:grid;place-items:center;margin-bottom:10px}
+.step h3{font-size:14.5px;margin-bottom:6px}
+.step p{font-size:12.8px;color:var(--muted);line-height:1.65;margin:0}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:10px}
+.faq details{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+.faq summary{
+  list-style:none;cursor:pointer;padding:14px 18px;font-size:14px;font-weight:600;color:var(--ink);
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:18px;color:var(--brand);font-weight:400;flex:none;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 18px 15px;font-size:13.5px;color:var(--ink-2);line-height:1.72}
+.faq details[open] summary{color:var(--brand)}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cmt{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 15px;box-shadow:var(--shadow)}
+.cmt-head{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;flex:none}
+.cmt-name{font-size:12.5px;font-weight:700}
+.cmt-time{font-size:11px;color:var(--muted);margin-left:auto}
+.cmt-text{font-size:13px;color:var(--ink-2);line-height:1.65}
+.cmt-text .hl{color:var(--brand);font-weight:600}
+
+/* 资讯 */
+.news-list{display:flex;flex-direction:column;gap:12px}
+.news-item{display:grid;grid-template-columns:140px minmax(0,1fr);gap:15px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.news-thumb{aspect-ratio:600/400;overflow:hidden;background:#eceff5}
+.news-thumb img{width:100%;height:100%;object-fit:cover}
+.news-body{padding:13px 16px 13px 0}
+.news-body .n-date{font-size:11.5px;color:var(--brand);font-weight:600;margin-bottom:3px}
+.news-body h3{font-size:14.5px;margin-bottom:5px}
+.news-body p{font-size:12.5px;color:var(--muted);line-height:1.6;margin:0}
+
+/* 相关推荐 标签索引 */
+.rel-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rel-tags a{
+  display:inline-flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--line-2);
+  border-radius:22px;padding:7px 15px;font-size:13px;color:var(--ink-2);transition:.15s;
+}
+.rel-tags a:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-soft)}
+.rel-tags a .n{font-size:11px;color:var(--muted)}
+.rel-tags a:hover .n{color:var(--brand)}
+
+/* 榜单 */
+.rank-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.rank-item{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:11px;align-items:center;padding:11px 16px;border-bottom:1px solid var(--line)}
+.rank-item:last-child{border-bottom:0}
+.rank-item:hover{background:#fafbfe}
+.rank-no{font-size:13px;font-weight:800;color:var(--muted);text-align:center}
+.rank-item:nth-child(1) .rank-no{color:#e0447a}
+.rank-item:nth-child(2) .rank-no{color:#c2185b}
+.rank-item:nth-child(3) .rank-no{color:#b8860b}
+.rank-t{font-size:13.5px;font-weight:600}
+.rank-d{font-size:11.5px;color:var(--muted)}
+.rank-val{font-size:12px;color:var(--brand);font-weight:700;white-space:nowrap}
+
+/* 侧栏小模块 */
+.mini-list{list-style:none;margin:0;padding:0}
+.mini-list li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:13px;line-height:1.5}
+.mini-list li:last-child{border-bottom:0}
+.mini-list .mt{font-weight:600;display:block;margin-bottom:2px}
+.mini-list .md{font-size:11.5px;color:var(--muted)}
+.mini-list .tag{font-size:10.5px;padding:1px 6px}
+
+.notice-card{background:linear-gradient(150deg,#fdf0f6,#f3ecfb);border:1px solid #f0dce9;border-radius:var(--radius);padding:16px}
+.notice-card .nt{font-size:13.5px;font-weight:800;margin-bottom:7px;color:var(--brand-2)}
+.notice-card p{font-size:12.3px;color:var(--ink-2);line-height:1.65;margin-bottom:8px}
+.notice-card ul{font-size:12.3px;color:var(--ink-2);padding-left:16px;margin:0}
+.notice-card li{margin-bottom:4px}
+
+.creator-quote{background:var(--ink);color:#e9ecf4;border-radius:var(--radius);padding:18px}
+.creator-quote .q{font-size:13.5px;line-height:1.7;font-style:italic;margin-bottom:10px}
+.creator-quote .who{font-size:12px;color:#a9b1c3}
+.creator-quote .who b{color:#fff;font-style:normal}
+
+/* 搜索无结果 */
+.no-result{display:none;background:var(--panel);border:1px dashed var(--line-2);border-radius:var(--radius);padding:26px;text-align:center;color:var(--muted);font-size:14px}
+.no-result.show{display:block}
+.search-hit{outline:2px solid var(--brand);outline-offset:2px;border-radius:8px}
+
+/* ============ 页尾 ============ */
+.footer{background:#12151d;color:#aeb6c6;padding:44px 0 26px;margin-top:10px}
+.footer .wrap{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+.footer h4{font-size:13px;color:#fff;letter-spacing:.5px;margin-bottom:12px}
+.footer .fbrand .bt-main{font-size:17px;font-weight:800;color:#fff}
+.footer .fbrand p{font-size:12.5px;line-height:1.7;margin-top:10px;max-width:300px}
+.footer ul{list-style:none;margin:0;padding:0}
+.footer ul li{margin-bottom:7px}
+.footer ul a{font-size:12.5px;color:#aeb6c6}
+.footer ul a:hover{color:#fff}
+.footer-bottom{max-width:var(--maxw);margin:30px auto 0;padding:18px 22px 0;border-top:1px solid #232833;font-size:11.5px;color:#7a8296;display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between}
+
+/* ============ 响应式 ============ */
+@media (max-width:1180px){
+  .layout{grid-template-columns:160px minmax(0,1fr) 230px;gap:20px}
+  .card-grid{grid-template-columns:1fr}
+}
+@media (max-width:1024px){
+  .mainnav{display:none}
+  .mobile-toggle{display:inline-block}
+  .header .wrap{gap:12px}
+  .head-tools .search-box input{width:110px}
+  .hero .wrap{grid-template-columns:1fr;gap:30px;padding-top:38px;padding-bottom:38px}
+  .hero-visual{max-width:520px;width:100%;margin:0 auto}
+  .layout{grid-template-columns:minmax(0,1fr) 260px;gap:22px}
+  .channel-nav{display:none}
+  .main-col{order:1}
+  .side-col{order:2;position:static}
+  .footer .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:740px){
+  .wrap{padding:0 15px}
+  .layout{grid-template-columns:1fr;padding:20px 15px 44px;gap:26px}
+  .side-col{order:2}
+  .head-tools .search-box{display:none}
+  .head-tools .btn-ghost{padding:6px 11px;font-size:12px}
+  .hero h1{font-size:29px}
+  .hero-stats{gap:20px}
+  .card-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .guide-steps{grid-template-columns:1fr}
+  .comments{grid-template-columns:1fr}
+  .overview .ov-grid{grid-template-columns:1fr}
+  .news-item{grid-template-columns:1fr}
+  .news-thumb{aspect-ratio:600/300}
+  .news-body{padding:12px 15px 15px}
+  .update-item{grid-template-columns:52px minmax(0,1fr);gap:11px;padding:12px 14px}
+  .up-thumb{width:52px;height:52px}
+  .up-time{grid-column:2;text-align:left;display:flex;gap:8px;align-items:center}
+  .deep{padding:20px 18px}
+  .footer .wrap{grid-template-columns:1fr;gap:22px}
+  .footer-bottom{flex-direction:column;gap:6px}
+  .hero-float.f1{left:0}
+  .hero-float.f2{right:0}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="annbar">
+  <div class="wrap">
+    <span class="tag">今日更新</span>
+    <span class="msg">11 月 25 日新增 <b>14 条</b> 国产短片与剧场连载 · 婷婷剧场《旧巷照相馆》第 9 集已上线 · 创作者访谈第 6 期发布</span>
+    <span class="side">社区在线 3,284 人</span>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="久久婷婷久久99国产 首页">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <defs>
+          <linearGradient id="bmG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#7b1fa2"/><stop offset="1" stop-color="#c2185b"/>
+          </linearGradient>
+        </defs>
+        <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#bmG)"/>
+        <path d="M15 12.5v15l12-7.5z" fill="#fff"/>
+        <circle cx="30" cy="11" r="3.2" fill="#fff" opacity=".85"/>
+      </svg>
+      <span class="brand-text">
+        <span class="bt-main">久久婷婷久久99国产</span>
+        <span class="bt-sub">国产视频社区</span>
+      </span>
+    </a>
+    <nav class="mainnav" aria-label="主导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#picks">精选短片</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#cats">分类频道</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">看片路径</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#rank">口碑榜</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-box" role="search">
+        <input id="siteSearch" type="search" placeholder="搜条目 / 类型 / 创作者" aria-label="站内搜索">
+        <button type="button" id="searchBtn">查找</button>
+      </div>
+      <a class="btn-ghost" href="/#updates">今日更新</a>
+      <button class="mobile-toggle" id="mToggle" aria-expanded="false" aria-controls="mobileNav">频道</button>
+    </div>
+  </div>
+  <nav id="mobileNav" class="mainnav" style="display:none;padding:8px 15px 12px;flex-wrap:wrap;background:#fff;border-top:1px solid var(--line);height:auto;position:absolute;left:0;right:0;top:var(--head-h);box-shadow:var(--shadow)" aria-label="移动频道导航">
+    <a href="/#overview">领域概览</a>
+    <a href="/#picks">精选短片</a>
+    <a href="/#updates">最新更新</a>
+    <a href="/#cats">分类频道</a>
+    <a href="/#deep">深度解析</a>
+    <a href="/#guide">看片路径</a>
+    <a href="/#faq">常见问答</a>
+    <a href="/#comments">观众评论</a>
+    <a href="/#news">相关资讯</a>
+    <a href="/#rank">口碑榜</a>
+  </nav>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="hero-eyebrow"><span class="dot"></span>国产原创视频 · 每日更新</span>
+      <h1>久久婷婷久久99国产</h1>
+      <p class="hero-lead">一个把国产短片、连载剧场和创作者幕后放在一起看的内容社区。这里按更新节奏追踪《旧巷照相馆》《江城夜话》这类连载，也收拢独立短片、纪录短打和方言小剧场，帮你在打开第一集之前就把类型、时长和口碑摸清楚。</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="/#picks">看本周精选短片</a>
+        <a class="btn-secondary" href="/#guide">第一次来怎么选</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="num">2,860+</div><div class="lbl">在架国产条目</div></div>
+        <div class="stat"><div class="num">14 条</div><div class="lbl">今日新增</div></div>
+        <div class="stat"><div class="num">9.1</div><div class="lbl">本周口碑最高</div></div>
+        <div class="stat"><div class="num">36 位</div><div class="lbl">入驻创作者</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-frame">
+        <svg viewBox="0 0 480 372" role="img" aria-label="国产短片播放界面示意图">
+          <defs>
+            <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2a1236"/><stop offset="1" stop-color="#4a1240"/>
+            </linearGradient>
+            <linearGradient id="hg2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#c2185b"/><stop offset="1" stop-color="#7b1fa2"/>
+            </linearGradient>
+          </defs>
+          <rect width="480" height="372" fill="url(#hg1)"/>
+          <circle cx="392" cy="70" r="120" fill="#c2185b" opacity=".18"/>
+          <circle cx="70" cy="300" r="130" fill="#7b1fa2" opacity=".22"/>
+          <rect x="40" y="46" width="400" height="200" rx="10" fill="#0e0a16" stroke="#ffffff" stroke-opacity=".12"/>
+          <rect x="40" y="46" width="400" height="200" rx="10" fill="none" stroke="url(#hg2)" stroke-width="1.5" opacity=".7"/>
+          <circle cx="240" cy="146" r="34" fill="#ffffff" opacity=".14"/>
+          <path d="M230 128v36l31-18z" fill="#fff"/>
+          <rect x="60" y="212" width="230" height="8" rx="4" fill="#ffffff" opacity=".22"/>
+          <rect x="60" y="212" width="128" height="8" rx="4" fill="url(#hg2)"/>
+          <circle cx="188" cy="216" r="7" fill="#fff"/>
+          <text x="60" y="186" fill="#fff" font-size="15" font-family="sans-serif" font-weight="700">旧巷照相馆 · 第 9 集</text>
+          <text x="60" y="204" fill="#d9c7e6" font-size="10.5" font-family="sans-serif">国产连载剧场 / 单集 18 分钟</text>
+          <g font-family="sans-serif">
+            <rect x="40" y="268" width="118" height="66" rx="8" fill="#ffffff" opacity=".08"/>
+            <text x="54" y="292" fill="#f3c9dd" font-size="10">正在热播</text>
+            <text x="54" y="310" fill="#fff" font-size="12" font-weight="700">江城夜话</text>
+            <text x="54" y="325" fill="#b9aecb" font-size="9.5">更新至 12 集</text>
+            <rect x="172" y="268" width="118" height="66" rx="8" fill="#ffffff" opacity=".08"/>
+            <text x="186" y="292" fill="#f3c9dd" font-size="10">独立短片</text>
+            <text x="186" y="310" fill="#fff" font-size="12" font-weight="700">三月的渡口</text>
+            <text x="186" y="325" fill="#b9aecb" font-size="9.5">26 分钟 / 剧情</text>
+            <rect x="304" y="268" width="118" height="66" rx="8" fill="#ffffff" opacity=".08"/>
+            <text x="318" y="292" fill="#f3c9dd" font-size="10">纪录短打</text>
+            <text x="318" y="310" fill="#fff" font-size="12" font-weight="700">早市六点半</text>
+            <text x="318" y="325" fill="#b9aecb" font-size="9.5">41 分钟 / 纪实</text>
+          </g>
+        </svg>
+      </div>
+      <div class="hero-float f1"><div class="k">今日口碑</div><div class="v"><em>9.1</em> 分 · 三月的渡口</div></div>
+      <div class="hero-float f2"><div class="k">追更提醒</div><div class="v">旧巷照相馆 <em>21:00</em> 更新</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 主体三栏 -->
+<div class="layout">
+
+  <!-- 左频道索引 -->
+  <aside class="channel-nav" aria-label="频道索引">
+    <div class="panel panel-pad">
+      <div class="panel-title">频道索引</div>
+      <ul class="ch-list">
+        <li><a href="/#cats">连载剧场<span class="cnt">412</span></a></li>
+        <li><a href="/#cats">独立短片<span class="cnt">689</span></a></li>
+        <li><a href="/#cats">纪录短打<span class="cnt">236</span></a></li>
+        <li><a href="/#cats">方言小剧场<span class="cnt">158</span></a></li>
+        <li><a href="/#cats">校园题材<span class="cnt">204</span></a></li>
+        <li><a href="/#cats">悬疑短剧<span class="cnt">311</span></a></li>
+        <li><a href="/#cats">都市情感<span class="cnt">377</span></a></li>
+        <li><a href="/#cats">非遗纪录<span class="cnt">96</span></a></li>
+        <li><a href="/#cats">动画短片<span class="cnt">183</span></a></li>
+        <li><a href="/#cats">幕后创作<span class="cnt">194</span></a></li>
+      </ul>
+    </div>
+    <div class="panel panel-pad" style="margin-top:16px">
+      <div class="panel-title">更新节奏</div>
+      <ul class="mini-list">
+        <li><span class="mt">周一 · 剧场连载</span><span class="md">《旧巷照相馆》等 6 部</span></li>
+        <li><span class="mt">周三 · 独立短片</span><span class="md">新片 4—6 条</span></li>
+        <li><span class="mt">周五 · 纪录短打</span><span class="md">每周 2 条</span></li>
+        <li><span class="mt">周日 · 创作者访谈</span><span class="md">每两周 1 期</span></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- 主内容 -->
+  <main class="main-col" id="mainContent">
+
+    <!-- 1. 主题领域概览 -->
+    <section class="section overview" id="overview">
+      <div class="sec-head" style="margin-bottom:12px">
+        <div>
+          <h2>国产视频的内容版图</h2>
+          <div class="sub">从连载剧场到独立短片，先弄清楚每一类都在做什么</div>
+        </div>
+      </div>
+      <p>国产视频在近两年被拆得越来越细：一端是按周更新的连载剧场，靠固定角色和悬念结构留住观众；另一端是三十分钟以内的独立短片，导演自己扛机器，拍一个完整的情绪或一个地方。夹在中间的是纪录短打和方言小剧场，前者讲究真实场景里的细节，后者把地域语言直接当成叙事工具。理解这个版图，比记住任何单个条目名都管用。</p>
+      <p>如今的国产原创内容有几个明显方向。第一是「短集数连载」：单集 15—25 分钟，一季 8—12 集，适合一周内追完，代表如《旧巷照相馆》《江城夜话》。第二是「作者短片」：多为 20—40 分钟，常在影展与线上同步放出，像《三月的渡口》这类作品更看重镜头语言而非情节强度。第三是「在地纪录」：拍早市、拍手艺、拍一条街的四季，时长弹性大，观看门槛低但信息密度高。第四是「方言小剧场」：用川渝、粤语、东北话演日常冲突，笑点依赖语言本身，字幕质量直接影响观感。</p>
+      <p>这些方向在更新节奏、判断标准和消费方式上差别很大。连载剧场看重「能不能追下去」，前两集决定去留；独立短片看重「作者想说什么」，适合一次只看一部；纪录短打看重「拍到没拍到」，同题材之间可以横向比较；方言小剧场则更依赖演员的语感。把类型先分清，再决定投入多少时间，是这套内容最省力的消费方式。</p>
+      <div class="ov-grid">
+        <div class="ov-item"><div class="oi-t">连载剧场</div><div class="oi-d">周更，单集 15—25 分钟，一季 8—12 集，重角色与悬念</div></div>
+        <div class="ov-item"><div class="oi-t">独立短片</div><div class="oi-d">20—40 分钟，作者表达优先，常配合影展与访谈一起看</div></div>
+        <div class="ov-item"><div class="oi-t">纪录短打</div><div class="oi-d">真实场景，时长弹性大，适合横向比较同题材</div></div>
+      </div>
+    </section>
+
+    <!-- 2. 精选内容推荐 -->
+    <section class="section" id="picks">
+      <div class="sec-head">
+        <div>
+          <h2>本周精选国产短片与连载</h2>
+          <div class="sub">按口碑与讨论度挑出的 8 个条目，含类型、看点与更新状态</div>
+        </div>
+        <a class="more" href="/#updates">看全部更新 →</a>
+      </div>
+      <div class="card-grid" id="pickGrid">
+
+        <article class="card" data-search="旧巷照相馆 连载剧场 悬疑 年代 国产连载">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/jiuxiang-zpg09/400/300" width="400" height="300" loading="lazy" alt="旧巷照相馆剧照：老式照相馆内景">
+            <span class="card-badge">连载剧场</span>
+          </div>
+          <div class="card-body">
+            <h3>旧巷照相馆</h3>
+            <div class="tag-row"><span class="tag">年代悬疑</span><span class="tag alt">周更</span><span class="tag">单集 18 分钟</span></div>
+            <p class="desc">南方小城的照相馆替人保存底片，也替人藏住秘密。第 9 集把 1998 年的失踪案与一张重复曝光的老照片接上，叙事靠道具推进而非台词解释。</p>
+            <div class="card-meta"><span>更新至 9 集 / 共 12 集</span><span class="score">9.0 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-search="江城夜话 都市情感 连载剧场 国产连载">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/jiangcheng-yh12/400/300" width="400" height="300" loading="lazy" alt="江城夜话剧照：江边夜谈场景">
+            <span class="card-badge">连载剧场</span>
+          </div>
+          <div class="card-body">
+            <h3>江城夜话</h3>
+            <div class="tag-row"><span class="tag">都市情感</span><span class="tag alt">已完结</span><span class="tag">武汉取景</span></div>
+            <p class="desc">十二集讲十二个深夜电台来电，每集独立又有暗线。第 12 集把主持人自己的故事收束，是全季情绪最满的一集，适合一次连看三集。</p>
+            <div class="card-meta"><span>全 12 集已上线</span><span class="score">8.8 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-search="三月的渡口 独立短片 剧情 国产短片">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/sanyue-dk03/400/300" width="400" height="300" loading="lazy" alt="三月的渡口短片画面：清晨江边渡船">
+            <span class="card-badge">独立短片</span>
+          </div>
+          <div class="card-body">
+            <h3>三月的渡口</h3>
+            <div class="tag-row"><span class="tag">作者短片</span><span class="tag alt">影展入围</span><span class="tag">26 分钟</span></div>
+            <p class="desc">一个摆渡人和一个每天来问船期的女人。全片只有 11 句对白，靠江面光线和发动机声撑住情绪，属于需要安静看完的那类国产短片。</p>
+            <div class="card-meta"><span>2026-11-18 上线</span><span class="score">9.1 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-search="早市六点半 纪录短打 纪实 国产纪录">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/zaoshi-ld07/400/300" width="400" height="300" loading="lazy" alt="早市六点半纪录片画面：清晨菜市场">
+            <span class="card-badge">纪录短打</span>
+          </div>
+          <div class="card-body">
+            <h3>早市六点半</h3>
+            <div class="tag-row"><span class="tag">在地纪录</span><span class="tag alt">纪实</span><span class="tag">41 分钟</span></div>
+            <p class="desc">跟拍成都一个菜市场从开灯到收摊的完整一天，没有旁白。摊主之间的议价和寒暄构成全部内容，适合和《江城夜话》对照看城市质感。</p>
+            <div class="card-meta"><span>2026-11-12 上线</span><span class="score">8.7 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-search="川渝小馆 方言小剧场 喜剧 国产短片">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/chuanyu-xg05/400/300" width="400" height="300" loading="lazy" alt="川渝小馆剧照：小餐馆内顾客与老板">
+            <span class="card-badge">方言小剧场</span>
+          </div>
+          <div class="card-body">
+            <h3>川渝小馆</h3>
+            <div class="tag-row"><span class="tag">方言喜剧</span><span class="tag alt">双周更</span><span class="tag">单集 12 分钟</span></div>
+            <p class="desc">一家小馆子里只发生对话，笑点全靠川渝话的语速和停顿。第 6 集「加不加辣」把外地客人写成对照组，是本季流传最广的一段。</p>
+            <div class="card-meta"><span>更新至 6 集</span><span class="score">8.6 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-search="无声的放学铃 校园题材 悬疑短剧 国产连载">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/wusheng-fxl21/400/300" width="400" height="300" loading="lazy" alt="无声的放学铃剧照：黄昏教学楼走廊">
+            <span class="card-badge">悬疑短剧</span>
+          </div>
+          <div class="card-body">
+            <h3>无声的放学铃</h3>
+            <div class="tag-row"><span class="tag">校园悬疑</span><span class="tag alt">周更</span><span class="tag">单集 22 分钟</span></div>
+            <p class="desc">县城中学的旧教学楼要拆，四个学生想在拆之前找到十年前的一卷录音。悬念铺得克制，前两集信息量不大，第三集起才开始加速。</p>
+            <div class="card-meta"><span>更新至 4 集 / 共 10 集</span><span class="score">8.5 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-search="纸上山河 非遗纪录 纪录短打 国产纪录">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/zhishang-sh14/400/300" width="400" height="300" loading="lazy" alt="纸上山河纪录片画面：手工造纸作坊">
+            <span class="card-badge">非遗纪录</span>
+          </div>
+          <div class="card-body">
+            <h3>纸上山河</h3>
+            <div class="tag-row"><span class="tag">非遗</span><span class="tag alt">手工造纸</span><span class="tag">35 分钟</span></div>
+            <p class="desc">拍安徽泾县一家还在用古法造纸的作坊，从泡料拍到晒纸。没有煽情的旁白，把工序本身当叙事，适合对传统手艺感兴趣的观众。</p>
+            <div class="card-meta"><span>2026-11-05 上线</span><span class="score">8.9 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-search="橡皮擦城市 动画短片 国产动画 独立短片">
+          <div class="card-cover">
+            <img src="https://picsum.photos/seed/xiangpi-cs08/400/300" width="400" height="300" loading="lazy" alt="橡皮擦城市动画画面：被擦除的街区">
+            <span class="card-badge">动画短片</span>
+          </div>
+          <div class="card-body">
+            <h3>橡皮擦城市</h3>
+            <div class="tag-row"><span class="tag">二维动画</span><span class="tag alt">作者短片</span><span class="tag">14 分钟</span></div>
+            <p class="desc">一个女孩发现自己住的城市正在被逐块擦掉，她用铅笔把街道重新画回来。手绘质感强，主题直接，是今年国产动画短片里讨论度较高的一部。</p>
+            <div class="card-meta"><span>2026-11-20 上线</span><span class="score">8.8 分</span></div>
+          </div>
+        </article>
+
+      </div>
+      <div class="no-result" id="pickNoResult">没有找到匹配的条目，试试「连载」「纪录」「动画」这类更短的关键词。</div>
+    </section>
+
+    <!-- 3. 最新更新 -->
+    <section class="section" id="updates">
+      <div class="sec-head">
+        <div>
+          <h2>最新更新与今日上线</h2>
+          <div class="sub">2026 年 11 月 25 日当天及本月的具体更新条目</div>
+        </div>
+      </div>
+      <div class="update-list">
+        <div class="update-item">
+          <div class="up-thumb"><img src="https://picsum.photos/seed/jiuxiang-zpg09/120/120" width="120" height="120" loading="lazy" alt="旧巷照相馆第 9 集更新封面"></div>
+          <div class="up-main"><div class="up-t">旧巷照相馆</div><div class="up-d">第 9 集「重复曝光」上线，1998 年失踪案线索与老底片对上。</div></div>
+          <div class="up-time"><span class="ep">第 9 集</span><br>今天 21:00</div>
+        </div>
+        <div class="update-item">
+          <div class="up-thumb"><img src="https://picsum.photos/seed/xiangpi-cs08/120/120" width="120" height="120" loading="lazy" alt="橡皮擦城市动画短片封面"></div>
+          <div class="up-main"><div class="up-t">橡皮擦城市</div><div class="up-d">国产二维动画短片上线，14 分钟，导演手记同步放出。</div></div>
+          <div class="up-time"><span class="ep">新片</span><br>昨天 20:10</div>
+        </div>
+        <div class="update-item">
+          <div class="up-thumb"><img src="https://picsum.photos/seed/chuanyu-xg05/120/120" width="120" height="120" loading="lazy" alt="川渝小馆第 6 集封面"></div>
+          <div class="up-main"><div class="up-t">川渝小馆</div><div class="up-d">第 6 集「加不加辣」上线，外地客人设定引发方言梗讨论。</div></div>
+          <div class="up-time"><span class="ep">第 6 集</span><br>11 月 23 日</div>
+        </div>
+        <div class="update-item">
+          <div class="up-thumb"><img src="https://picsum.photos/seed/wusheng-fxl21/120/120" width="120" height="120" loading="lazy" alt="无声的放学铃第 4 集封面"></div>
+          <div class="up-main"><div class="up-t">无声的放学铃</div><div class="up-d">第 4 集上线，录音带的来源第一次被明确指向。</div></div>
+          <div class="up-time"><span class="ep">第 4 集</span><br>11 月 22 日</div>
+        </div>
+        <div class="update-item">
+          <div class="up-thumb"><img src="https://picsum.photos/seed/sanyue-dk03/120/120" width="120" height="120" loading="lazy" alt="三月的渡口短片封面"></div>
+          <div class="up-main"><div class="up-t">三月的渡口</div><div class="up-d">上线放映厅并公开导演访谈，谈 11 句对白的设计思路。</div></div>
+          <div class="up-time"><span class="ep">访谈</span><br>11 月 21 日</div>
+        </div>
+        <div class="update-item">
+          <div class="up-thumb"><img src="https://picsum.photos/seed/zaoshi-ld07/120/120" width="120" height="120" loading="lazy" alt="早市六点半纪录片封面"></div>
+          <div class="up-main"><div class="up-t">早市六点半</div><div class="up-d">上线导演剪辑版，比公映版多 6 分钟收摊段落。</div></div>
+          <div class="up-time"><span class="ep">剪辑版</span><br>11 月 19 日</div>
+        </div>
+        <div class="update-item">
+          <div class="up-thumb"><img src="https://picsum.photos/seed/zhishang-sh14/120/120" width="120" height="120" loading="lazy" alt="纸上山河纪录片封面"></div>
+          <div class="up-main"><div class="up-t">纸上山河</div><div class="up-d">补充 12 分钟造纸工序花絮，含晒纸与压纸完整流程。</div></div>
+          <div class="up-time"><span class="ep">花絮</span><br>11 月 16 日</div>
+        </div>
+        <div class="update-item">
+          <div class="up-thumb"><img src="https://picsum.photos/seed/jiangcheng-yh12/120/120" width="120" height="120" loading="lazy" alt="江城夜话全季封面"></div>
+          <div class="up-main"><div class="up-t">江城夜话</div><div class="up-d">全 12 集完结，放出电台原声特辑与主创对谈。</div></div>
+          <div class="up-time"><span class="ep">完结</span><br>11 月 14 日</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section class="section" id="cats">
+      <div class="sec-head">
+        <div>
+          <h2>按类型找国产视频</h2>
+          <div class="sub">8 个常用入口，直接对应对类型词搜索</div>
+        </div>
+      </div>
+      <div class="cat-grid">
+        <a class="cat" href="/#picks"><div class="cat-ico" style="background:#fde8f1;color:#c2185b">剧</div><div class="cat-t">连载剧场</div><div class="cat-d">周更、多集，重角色与悬念</div></a>
+        <a class="cat" href="/#picks"><div class="cat-ico" style="background:#e9e3f7;color:#7b1fa2">片</div><div class="cat-t">独立短片</div><div class="cat-d">20—40 分钟，作者表达优先</div></a>
+        <a class="cat" href="/#picks"><div class="cat-ico" style="background:#e3f5f5;color:#0f8a8a">纪</div><div class="cat-t">纪录短打</div><div class="cat-d">真实场景，信息密度高</div></a>
+        <a class="cat" href="/#picks"><div class="cat-ico" style="background:#fbf3dc;color:#b8860b">言</div><div class="cat-t">方言小剧场</div><div class="cat-d">川渝、粤语、东北话喜剧</div></a>
+        <a class="cat" href="/#picks"><div class="cat-ico" style="background:#fde8f1;color:#c2185b">校</div><div class="cat-t">校园题材</div><div class="cat-d">中学与大学背景的成长叙事</div></a>
+        <a class="cat" href="/#picks"><div class="cat-ico" style="background:#e9e3f7;color:#7b1fa2">悬</div><div class="cat-t">悬疑短剧</div><div class="cat-d">线索驱动，集数偏短</div></a>
+        <a class="cat" href="/#picks"><div class="cat-ico" style="background:#e3f5f5;color:#0f8a8a">遗</div><div class="cat-t">非遗纪录</div><div class="cat-d">手艺工序与在地生活</div></a>
+        <a class="cat" href="/#picks"><div class="cat-ico" style="background:#fbf3dc;color:#b8860b">动</div><div class="cat-t">动画短片</div><div class="cat-d">二维、定格与手绘质感</div></a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析 -->
+    <section class="section deep" id="deep">
+      <div class="sec-head" style="margin-bottom:12px">
+        <div>
+          <h2>深度解析：国产短片与连载剧场怎么区分、怎么判断</h2>
+          <div class="sub">从结构、时长、判断维度三方面拆开看</div>
+        </div>
+      </div>
+
+      <h3>连载剧场与独立短片的结构差异</h3>
+      <p>连载剧场的核心是「钩子结构」：每集结尾必须留一个未解决的问题，让观众有理由点下一集。《旧巷照相馆》把钩子放在物件上——一张底片、一台旧相机，每集解开一个又埋下一个；《无声的放学铃》则把钩子放在信息上，第三集才明确录音带的存在。这种结构的代价是单集独立观看性差，从中间插入会丢失大量上下文。</p>
+      <p>独立短片反过来，必须在一次放映内完成起承转合。《三月的渡口》26 分钟只讲一件事：等一条船。它不需要钩子，靠光线变化和重复动作累积情绪。所以判断这两类内容的标准完全不同——连载看「悬念是否可持续」，短片看「作者是否说清楚了一件小事」。</p>
+
+      <h3>四个具体判断维度</h3>
+      <table class="cmp">
+        <thead>
+          <tr><th>维度</th><th>连载剧场</th><th>独立短片</th><th>纪录短打</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>时长结构</td><td>单集 15—25 分钟，一季 8—12 集</td><td>20—40 分钟，单片完结</td><td>30—60 分钟，可分段看</td></tr>
+          <tr><td>核心看点</td><td>悬念是否撑得住全季</td><td>镜头与情绪是否统一</td><td>是否拍到真实细节</td></tr>
+          <tr><td>观看方式</td><td>按顺序连看，忌跳集</td><td>一次一部，忌倍速</td><td>可对照同题材横看</td></tr>
+          <tr><td>常见失手</td><td>中段注水、结局收不住</td><td>形式大于内容、情绪空转</td><td>旁白过多、场景摆拍</td></tr>
+        </tbody>
+      </table>
+
+      <h3>方言小剧场为什么难做好</h3>
+      <p>方言喜剧的笑点高度依赖语感，语速、停顿、语气词都是节奏的一部分。一旦字幕把方言翻成普通话，笑点往往损失一半。《川渝小馆》之所以成立，是因为它把冲突设计在「语言不通」本身——外地客人听不懂老板的调侃，误解反而成了笑料。反过来，很多同类作品只是把普通话台词换成方言念，语言没有参与叙事，观感就会显得刻意。</p>
+      <ul>
+        <li>判断标准一：方言是否承担信息功能，而不只是口音装饰。</li>
+        <li>判断标准二：字幕是否保留语气词，还是全部改写成书面语。</li>
+        <li>判断标准三：演员是否本地人，语速和停顿是否自然。</li>
+      </ul>
+
+      <h3>国产纪录短打的两种拍法</h3>
+      <p>一种是「跟拍型」，如《早市六点半》，摄影机跟着人物走，不设旁白，靠现场声撑起全部信息。另一种是「工序型」，如《纸上山河》，按流程推进，把泡料、抄纸、晒纸一步步拍完，观众得到的是知识而非情绪。两种拍法没有高下，但消费方式不同：跟拍型适合一次看完，工序型适合分段看并在中途暂停查资料。</p>
+      <p>值得注意的是，国产纪录短打近两年明显减少了煽情旁白，更多作品选择让画面自己说话。这对观众其实是更高的要求——需要自己从场景里读出信息，而不是被解说牵着走。</p>
+
+      <h3>动画短片在国产内容里的位置</h3>
+      <p>二维动画短片制作周期长、产量低，但在表达自由度上高于实拍。《橡皮擦城市》用「擦除」这个动作把城市更新议题具象化，14 分钟完成一个完整的隐喻。看这类作品时，值得留意的是美术设定与动作设计是否服务于主题，而不是单纯看画得精不精细。</p>
+    </section>
+
+    <!-- 6. 体验指南 -->
+    <section class="section" id="guide">
+      <div class="sec-head">
+        <div>
+          <h2>看片路径：第一次接触国产短片从哪开始</h2>
+          <div class="sub">按时间预算和观看习惯给出四条具体路径</div>
+        </div>
+      </div>
+      <div class="guide-steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>只有 30 分钟：先看独立短片</h3>
+          <p>从《三月的渡口》或《橡皮擦城市》入手，单片完结、无需追更，能快速判断自己是否吃得下这类作者表达。看完再决定要不要进连载。</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>想连追一周：选 8—12 集的连载</h3>
+          <p>《旧巷照相馆》适合喜欢年代悬疑的观众，《江城夜话》适合偏好单元剧结构的观众。前者必须按顺序看，后者可以挑单集。</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>只想放松：方言小剧场</h3>
+          <p>《川渝小馆》单集 12 分钟，适合吃饭时看。注意字幕版本，方言梗在普通话字幕下会损失一部分，建议选保留语气词的版本。</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>想看真实题材：纪录短打对照看</h3>
+          <p>把《早市六点半》和《纸上山河》连着看，一个是城市日常，一个是手艺工序，能直观感受国产纪录的两种拍法差异。</p>
+        </div>
+        <div class="step">
+          <div class="num">5</div>
+          <h3>如何判断一部短片值不值得投入</h3>
+          <p>先看前 3 分钟是否建立清晰的场景与人物关系；再看是否有明确的作者视角；最后看结尾是否收得住。三项都成立，基本不会浪费 30 分钟。</p>
+        </div>
+        <div class="step">
+          <div class="num">6</div>
+          <h3>同类条目怎么比较</h3>
+          <p>同题材之间比「信息增量」：看完是否多知道了一件事。同长度之间比「节奏控制」：有没有明显拖沓段落。同作者之间比「表达是否推进」：新作有没有解决旧作的问题。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="section" id="faq">
+      <div class="sec-head">
+        <div>
+          <h2>常见问答</h2>
+          <div class="sub">关于国产短片、连载剧场的具体问题</div>
+        </div>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>国产连载剧场一般多久更新一次？</summary>
+          <div class="ans">多数是周更，固定在周一或周五上线一集，一季 8—12 集，整季跨度约两到三个月。《旧巷照相馆》是周一 21:00 更新，《无声的放学铃》是周五。也有双周更的小体量作品，如《川渝小馆》，单集更短但间隔更长。追更前先确认更新日，能避免反复刷新。</div>
+        </details>
+        <details>
+          <summary>连载剧场和独立短片最大的区别是什么？</summary>
+          <div class="ans">结构目标不同。连载剧场每集要留钩子，为下一集服务，所以单集独立观看性差；独立短片要在一次放映内讲完一件事，靠完整的情绪或观点收尾。判断标准也随之不同：前者看悬念能不能撑住全季，后者看作者有没有说清楚一件小事。</div>
+        </details>
+        <details>
+          <summary>第一次接触国产短片，从哪个条目开始看比较好？</summary>
+          <div class="ans">如果时间有限，建议从 26 分钟的《三月的渡口》或 14 分钟的《橡皮擦城市》开始，单片完结、门槛低。如果更想看故事性强的，可以从《旧巷照相馆》前两集试水，两集之内就能判断是否合口味。</div>
+        </details>
+        <details>
+          <summary>方言小剧场看普通话字幕会损失什么？</summary>
+          <div class="ans">主要损失语感和节奏。方言里的语气词、停顿、语速变化本身承担笑点，翻成书面语后节奏被抹平。建议优先选保留语气词的字幕版本，或直接开原声看。像《川渝小馆》里「加不加辣」那一段，笑点就在语速的突然加快上。</div>
+        </details>
+        <details>
+          <summary>国产纪录短打为什么大多没有旁白？</summary>
+          <div class="ans">近两年的创作倾向是让现场声和画面承担叙事，减少解说对观众判断的干扰。《早市六点半》全程无旁白，靠摊主议价和寒暄推进；《纸上山河》也只保留工序现场声。这种拍法要求观众自己从场景里读信息，观感更接近「在场」。</div>
+        </details>
+        <details>
+          <summary>怎么判断一部国产短片是不是值得看？</summary>
+          <div class="ans">三个可操作的检查点：前 3 分钟是否建立清晰的场景与人物关系；中段是否有明确的作者视角而非堆砌镜头；结尾是否收得住而不是靠音乐硬拉情绪。三项都成立，通常不会浪费半小时。另外可以看同作者的上一部作品，表达是否有推进。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section class="section" id="comments">
+      <div class="sec-head">
+        <div>
+          <h2>观众怎么说</h2>
+          <div class="sub">来自 11 月 20 日至 25 日的具体条目讨论</div>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#c2185b">林</span><span class="cmt-name">林间有雾</span><span class="cmt-time">今天 10:12</span></div><div class="cmt-text"><span class="hl">旧巷照相馆</span>第 9 集那个重复曝光的处理太狠了，一句话没说就把两条时间线接上，比前八集都稳。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#7b1fa2">陈</span><span class="cmt-name">陈小满</span><span class="cmt-time">今天 09:40</span></div><div class="cmt-text">《三月的渡口》只有 11 句对白，我一开始以为会闷，结果江面那几组镜头一直记得住。适合一个人晚上看。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#0f8a8a">阿</span><span class="cmt-name">阿七不加班</span><span class="cmt-time">昨天 22:31</span></div><div class="cmt-text">《川渝小馆》第 6 集笑死，外地客人那个设定太真实了。就是字幕把「巴适」翻成「舒服」，味道少了一半。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#b8860b">周</span><span class="cmt-name">周未眠</span><span class="cmt-time">昨天 20:05</span></div><div class="cmt-text">《早市六点半》看到收摊那段有点感动，但说实话前面二十分钟节奏偏慢，得有点耐心。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#c2185b">许</span><span class="cmt-name">许知野</span><span class="cmt-time">11 月 24 日</span></div><div class="cmt-text"><span class="hl">无声的放学铃</span>前三集信息量确实小，第四集才开始有意思。建议新人直接从第三集起看，前两集可以快进。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#7b1fa2">沈</span><span class="cmt-name">沈见山</span><span class="cmt-time">11 月 24 日</span></div><div class="cmt-text">《橡皮擦城市》手绘质感太好了，擦除城市那个隐喻一点不绕，14 分钟讲完，比很多长片干脆。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#0f8a8a">李</span><span class="cmt-name">李不二</span><span class="cmt-time">11 月 23 日</span></div><div class="cmt-text">《江城夜话》全 12 集看完了，最喜欢第 7 集那个出租车司机的来电。单元剧结构确实友好，可以挑着看。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#b8860b">吴</span><span class="cmt-name">吴念安</span><span class="cmt-time">11 月 23 日</span></div><div class="cmt-text">《纸上山河》里晒纸那段我暂停查了资料，才知道竹帘抄纸的讲究这么多。这类工序型纪录片适合慢慢看。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#c2185b">何</span><span class="cmt-name">何田田</span><span class="cmt-time">11 月 22 日</span></div><div class="cmt-text">不太喜欢《旧巷照相馆》的节奏，每集结尾钩子留得太刻意了。不过摄影是真的好，老照相馆的光很讲究。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#7b1fa2">郑</span><span class="cmt-name">郑一鸣</span><span class="cmt-time">11 月 22 日</span></div><div class="cmt-text">《三月的渡口》和《早市六点半》连着看的，一个拍情绪一个拍日常，国产短片这两条路都走得通。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#0f8a8a">苏</span><span class="cmt-name">苏木白</span><span class="cmt-time">11 月 21 日</span></div><div class="cmt-text">方言小剧场我最怕字幕写成书面语，《川渝小馆》还算克制，保留了「要得」「晓得」这种词。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#b8860b">顾</span><span class="cmt-name">顾南枝</span><span class="cmt-time">11 月 21 日</span></div><div class="cmt-text">《无声的放学铃》第 4 集终于把录音带来源说清楚了，前面铺得有点散，希望后面能收回来。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#c2185b">秦</span><span class="cmt-name">秦小楼</span><span class="cmt-time">11 月 20 日</span></div><div class="cmt-text">《江城夜话》完结有点舍不得，电台原声特辑听着比正片还舒服，适合当背景音。</div></div>
+        <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#7b1fa2">冯</span><span class="cmt-name">冯小路</span><span class="cmt-time">11 月 20 日</span></div><div class="cmt-text">《橡皮擦城市》导演手记值得看，讲了擦除动作怎么一帧帧画，二维动画真费人。</div></div>
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section class="section" id="news">
+      <div class="sec-head">
+        <div>
+          <h2>相关资讯</h2>
+          <div class="sub">国产短片与连载剧场的近期具体动态</div>
+        </div>
+      </div>
+      <div class="news-list">
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-jbgg01/600/400" width="600" height="400" loading="lazy" alt="旧巷照相馆续订消息配图"></div>
+          <div class="news-body"><div class="n-date">2026-11-25</div><h3>《旧巷照相馆》确认续订第二季，故事转向 2003 年</h3><p>主创在更新日直播中确认第二季已进入筹备，时间线从 1998 年推进到 2003 年，照相馆将搬至新址，原班演员保留。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-dyhz02/600/400" width="600" height="400" loading="lazy" alt="国产独立短片展映单元配图"></div>
+          <div class="news-body"><div class="n-date">2026-11-22</div><h3>国产独立短片冬季展映单元公布 9 部片单</h3><p>《三月的渡口》《橡皮擦城市》等 9 部短片入选，展映分三场，每场后设导演问答，线上放映同步开放。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-fyzd03/600/400" width="600" height="400" loading="lazy" alt="方言小剧场字幕规范讨论配图"></div>
+          <div class="news-body"><div class="n-date">2026-11-19</div><h3>方言小剧场字幕规范引发讨论，多部作品改用语气词保留版</h3><p>社区围绕方言字幕是否该保留语气词展开讨论，《川渝小馆》等作品已上线双版本字幕，观众可自行切换。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-jlpk04/600/400" width="600" height="400" loading="lazy" alt="纪录短打片单更新配图"></div>
+          <div class="news-body"><div class="n-date">2026-11-16</div><h3>纪录短打新增 6 部在地题材，覆盖早市、造纸、渡口</h3><p>本月纪录单元新增《早市六点半》《纸上山河》等 6 部作品，题材集中在城市日常与传统手艺两类。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-dhbc05/600/400" width="600" height="400" loading="lazy" alt="动画短片扶持计划配图"></div>
+          <div class="news-body"><div class="n-date">2026-11-11</div><h3>二维动画短片扶持计划公布首批 5 个项目</h3><p>扶持方向集中在手绘与定格两类，《橡皮擦城市》团队新作在列，预计 2027 年上半年完成。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-pfjs06/600/400" width="600" height="400" loading="lazy" alt="国产短片评分规则调整配图"></div>
+          <div class="news-body"><div class="n-date">2026-11-06</div><h3>评分规则调整：连载剧场按整季计分，不再逐集展示</h3><p>新规自 11 月起生效，连载类作品改为整季综合评分，单集评分仅作参考，避免前期集数拉高整体分数。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section class="section" id="related">
+      <div class="sec-head">
+        <div>
+          <h2>相关推荐方向</h2>
+          <div class="sub">按具体类型与创作方向延伸</div>
+        </div>
+      </div>
+      <div class="rel-tags">
+        <a href="/#picks">年代悬疑连载 <span class="n">42</span></a>
+        <a href="/#picks">单元剧结构 <span class="n">31</span></a>
+        <a href="/#picks">作者短片 <span class="n">68</span></a>
+        <a href="/#picks">在地纪录 <span class="n">54</span></a>
+        <a href="/#picks">川渝方言喜剧 <span class="n">27</span></a>
+        <a href="/#picks">二维手绘动画 <span class="n">36</span></a>
+        <a href="/#picks">校园成长叙事 <span class="n">45</span></a>
+        <a href="/#picks">传统手艺纪录 <span class="n">23</span></a>
+        <a href="/#picks">导演访谈 <span class="n">19</span></a>
+        <a href="/#picks">影展入围短片 <span class="n">33</span></a>
+      </div>
+    </section>
+
+    <!-- 11. 补充板块：口碑榜 -->
+    <section class="section" id="rank">
+      <div class="sec-head">
+        <div>
+          <h2>本周国产视频口碑榜</h2>
+          <div class="sub">按整季综合评分排序，统计截至 2026-11-25</div>
+        </div>
+      </div>
+      <div class="rank-list">
+        <div class="rank-item"><span class="rank-no">1</span><div><div class="rank-t">三月的渡口</div><div class="rank-d">独立短片 · 26 分钟 · 影展入围</div></div><span class="rank-val">9.1</span></div>
+        <div class="rank-item"><span class="rank-no">2</span><div><div class="rank-t">旧巷照相馆</div><div class="rank-d">连载剧场 · 更新至 9 集</div></div><span class="rank-val">9.0</span></div>
+        <div class="rank-item"><span class="rank-no">3</span><div><div class="rank-t">纸上山河</div><div class="rank-d">非遗纪录 · 35 分钟</div></div><span class="rank-val">8.9</span></div>
+        <div class="rank-item"><span class="rank-no">4</span><div><div class="rank-t">江城夜话</div><div class="rank-d">连载剧场 · 全 12 集完结</div></div><span class="rank-val">8.8</span></div>
+        <div class="rank-item"><span class="rank-no">5</span><div><div class="rank-t">橡皮擦城市</div><div class="rank-d">动画短片 · 14 分钟</div></div><span class="rank-val">8.8</span></div>
+        <div class="rank-item"><span class="rank-no">6</span><div><div class="rank-t">早市六点半</div><div class="rank-d">纪录短打 · 41 分钟</div></div><span class="rank-val">8.7</span></div>
+        <div class="rank-item"><span class="rank-no">7</span><div><div class="rank-t">川渝小馆</div><div class="rank-d">方言小剧场 · 更新至 6 集</div></div><span class="rank-val">8.6</span></div>
+        <div class="rank-item"><span class="rank-no">8</span><div><div class="rank-t">无声的放学铃</div><div class="rank-d">悬疑短剧 · 更新至 4 集</div></div><span class="rank-val">8.5</span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="side-col" aria-label="辅助信息">
+    <div class="panel panel-pad">
+      <div class="panel-title">今日热榜</div>
+      <ul class="mini-list">
+        <li><span class="mt">旧巷照相馆</span><span class="md">第 9 集 · 讨论 218 条</span></li>
+        <li><span class="mt">三月的渡口</span><span class="md">导演访谈上线 · 讨论 164 条</span></li>
+        <li><span class="mt">橡皮擦城市</span><span class="md">新片 · 讨论 141 条</span></li>
+        <li><span class="mt">川渝小馆</span><span class="md">第 6 集 · 讨论 96 条</span></li>
+        <li><span class="mt">无声的放学铃</span><span class="md">第 4 集 · 讨论 88 条</span></li>
+      </ul>
+    </div>
+
+    <div class="notice-card">
+      <div class="nt">更新提醒</div>
+      <p>本周还有 3 条内容待上线，按时间排列：</p>
+      <ul>
+        <li>11 月 26 日 · 《无声的放学铃》第 5 集</li>
+        <li>11 月 27 日 · 独立短片《站台以北》</li>
+        <li>11 月 29 日 · 创作者访谈第 7 期</li>
+      </ul>
+    </div>
+
+    <div class="panel panel-pad">
+      <div class="panel-title">条目时间线</div>
+      <ul class="mini-list">
+        <li><span class="mt">11-25</span><span class="md">《旧巷照相馆》第 9 集上线</span></li>
+        <li><span class="mt">11-24</span><span class="md">《橡皮擦城市》导演手记发布</span></li>
+        <li><span class="mt">11-22</span><span class="md">冬季展映单元公布片单</span></li>
+        <li><span class="mt">11-19</span><span class="md">《早市六点半》导演剪辑版上线</span></li>
+        <li><span class="mt">11-14</span><span class="md">《江城夜话》全季完结</span></li>
+      </ul>
+    </div>
+
+    <div class="creator-quote">
+      <div class="q">「国产短片最难的不是拍出来，是让人愿意点开。前 3 分钟决定一切，所以我把所有力气都放在开头。」</div>
+      <div class="who">— <b>《三月的渡口》导演</b><br>访谈第 6 期 · 11 月 21 日</div>
+    </div>
+
+    <div class="panel panel-pad">
+      <div class="panel-title">可信度分层</div>
+      <ul class="mini-list">
+        <li><span class="mt">整季完结 · 评分稳定</span><span class="md">江城夜话、纸上山河</span></li>
+        <li><span class="mt">更新中 · 评分浮动</span><span class="md">旧巷照相馆、无声的放学铃</span></li>
+        <li><span class="mt">新上线 · 样本不足</span><span class="md">橡皮擦城市</span></li>
+      </ul>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="fbrand">
+      <div class="bt-main">久久婷婷久久99国产</div>
+      <p>一个聚焦国产原创视频的内容社区，收拢连载剧场、独立短片、纪录短打与方言小剧场，提供类型判断与看片路径参考。</p>
+    </div>
+    <div>
+      <h4>内容频道</h4>
+      <ul>
+        <li><a href="/#picks">连载剧场</a></li>
+        <li><a href="/#picks">独立短片</a></li>
+        <li><a href="/#picks">纪录短打</a></li>
+        <li><a href="/#picks">方言小剧场</a></li>
+        <li><a href="/#picks">动画短片</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>了解与参与</h4>
+      <ul>
+        <li><a href="/#overview">领域概览</a></li>
+        <li><a href="/#deep">深度解析</a></li>
+        <li><a href="/#guide">看片路径</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#comments">观众评论</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>动态与榜单</h4>
+      <ul>
+        <li><a href="/#updates">最新更新</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#rank">口碑榜</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 久久婷婷久久99国产 · 内容与评分为社区整理，条目信息以实际上线为准</span>
+    <span>更新节奏：连载周一 / 短片周三 / 纪录周五 / 访谈双周</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // 移动端频道菜单
+  var mt = document.getElementById('mToggle');
+  var mn = document.getElementById('mobileNav');
+  if(mt && mn){
+    mt.addEventListener('click', function(){
+      var open = mn.style.display !== 'none' && mn.style.display !== '';
+      mn.style.display = open ? 'none' : 'flex';
+      mt.setAttribute('aria-expanded', String(!open));
+    });
+    mn.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){ mn.style.display = 'none'; mt.setAttribute('aria-expanded','false'); }
+    });
+  }
+
+  // 本地搜索筛选
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var grid = document.getElementById('pickGrid');
+  var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll('.card')) : [];
+  var noRes = document.getElementById('pickNoResult');
+
+  function doSearch(){
+    if(!input || !grid) return;
+    var q = (input.value || '').trim().toLowerCase();
+    cards.forEach(function(c){ c.classList.remove('search-hit'); });
+    if(!q){
+      cards.forEach(function(c){ c.style.display = ''; });
+      if(noRes) noRes.classList.remove('show');
+      return;
+    }
+    var hit = 0, firstHit = null;
+    cards.forEach(function(c){
+      var hay = (c.getAttribute('data-search') || '') + ' ' + c.textContent.toLowerCase();
+      if(hay.indexOf(q) !== -1){
+        c.style.display = ''; hit++;
+        if(!firstHit) firstHit = c;
+      } else {
+        c.style.display = 'none';
+      }
+    });
+    if(noRes) noRes.classList.toggle('show', hit === 0);
+    if(firstHit){
+      firstHit.classList.add('search-hit');
+      document.getElementById('picks').scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }
+  if(btn) btn.addEventListener('click', doSearch);
+  if(input) input.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doSearch(); } });
+  if(input) input.addEventListener('input', function(){ if(!input.value.trim()) doSearch(); });
+})();
+</script>
+</body>
+        </html>
